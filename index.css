@@ -9,7 +9,7 @@ body {
     font-family: 'Raleway', sans-serif;
     background-image: url(https://i.ibb.co/85gRN0L/space.jpg);
     background-position: 50% 0;
-    overflow-x: hidden;
+    overflow: hidden;
     color: #fff;
 }
 a {
@@ -24,7 +24,7 @@ header {
     right: 0;
     width: calc(100% - 200px);
     margin: 0 auto;
-    padding: 10px 0;
+    padding: 36px 0;
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
     display: flex;
     justify-content: space-between;
@@ -137,7 +137,7 @@ header {
         left: 0;
         width: 100%;
         overflow: hidden;
-        background-color: #ffa25d;
+        background-color: #d0ae695c;
         padding: 15px 0;
         text-align: center;
         max-height: 50px;
@@ -147,6 +147,7 @@ header {
         text-transform: uppercase;
         font-size: 18px;
         font-weight: 600;
+        color: #D0AD69;
     }
     .textscroller_marquee {
         white-space: nowrap;
@@ -169,6 +170,7 @@ header {
 /* STAR STYLING */
 .star {
     position: absolute;
+    overflow: hidden;
 }
 .star1 {
     top: 0%;

@@ -100,5 +100,41 @@ $(document).ready(function () {
             $('#' + tab + 'c').addClass('show');
         }
 
+        // GSAP CARD ANIMATION
+        let tl = gsap.timeline();
+
+        tl.from(".img_group.show img:nth-child(2)", {
+            scale: 0,
+            rotate: -45,
+            opacity: 0,
+            duration: 1.1,
+        })
+        tl.from(".img_group.show img:nth-child(1)", {
+            x: -100,
+            rotate: 45,
+            opacity: 0,
+            duration: 1.6,
+        })
+        tl.from(".img_group.show img:nth-child(3)", {
+            x: -300,
+            rotate: -45,
+            opacity: 0,
+            duration: 1.1,
+        }, '-=1.3')
     });
+
+    let tl2 = gsap.timeline();
+
+    tl2.from('.bg_stars .star', {
+        scale: 0,
+        duration: 1.4,
+        opacity: 0,
+        stagger: 1,
+    })
+    .from('.bg_stars .star', {
+        rotate: 360,
+        duration: 60,
+        repeat: -1,
+        stagger: 1,
+    })
 });
