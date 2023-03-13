@@ -141,3 +141,24 @@ header {
             transform: translate3d(-50%, 0px, 0px)
         }
     }
+
+/* STAR STYLING */
+.star {
+    position: absolute;
+}
+.star1 {
+    top: 2%;
+    left: -24%;
+    z-index: -1;
+    scale: 0.95;
+}
+.star2 {
+    top: 10%;
+    left: 25%;
+    scale: 0.2;
+}
+.star3 {
+    top: 18%;
+    right: 14%;
+    scale: 0.25;
+}
